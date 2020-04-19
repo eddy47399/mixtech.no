@@ -11,6 +11,8 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { ServicesComponent } from './Pages/services/services.component';
+import { HeaderComponent } from './Elements/header/header.component';
+import {MatMenuModule} from "@angular/material/menu";
 
 @NgModule({
   declarations: [
@@ -18,6 +20,7 @@ import { ServicesComponent } from './Pages/services/services.component';
     HomePageComponent,
     ContactPageComponent,
     ServicesComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,6 +31,7 @@ import { ServicesComponent } from './Pages/services/services.component';
     MatCardModule,
     MatButtonModule,
     MatProgressSpinnerModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
