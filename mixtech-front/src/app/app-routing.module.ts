@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { StartpageComponent} from "./Pages/startpage/startpage.component";
 import { HomePageComponent } from "./Pages/home-page/home-page.component";
 import { ContactPageComponent} from "./Pages/contact-page/contact-page.component";
+import {ServicesComponent} from "./Pages/services/services.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: 'start-page', pathMatch: 'full'},
-  { path: 'start-page', component: StartpageComponent },
+  { path: '', redirectTo: 'home-page', pathMatch: 'full'},
   { path: 'home-page', component: HomePageComponent},
+  { path: 'services-page', component: ServicesComponent},
   { path: 'contact-page', component: ContactPageComponent},
 ];
 
