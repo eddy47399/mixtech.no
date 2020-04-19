@@ -1,0 +1,20 @@
+mat-toolbar {
+  background-color: lightgray;
+}
+button{
+  background-color: lightgray;
+  color: black;
+  top: 5px;
+  padding: 5px;
+
+}
+p{
+  padding: 0px;
+}
+a{
+  padding: 5px;
+}
+
+.mat-button-focus-overlay {
+  background-color: darkgray;
+}

@@ -1,0 +1,27 @@
+<mat-toolbar>
+  <p class="logo">
+    <a class="navbar-item"><img src="/assets/logo-mixtech.png" style="width:300px;height:70px;"></a>
+  </p>
+
+  <p class="dropmenu-services">
+    <mat-menu #servicesMenu="matMenu">
+      <button mat-menu-item>Cloud Storage</button>
+      <button mat-menu-item>VPN</button>
+      <button mat-menu-item>Plex media server</button>
+      <button mat-menu-item>Minecraft online server</button>
+    </mat-menu>
+  </p>
+
+  <p class="dropmenu-contact">
+    <mat-menu #contactMenu="matMenu">
+      <button mat-menu-item>About</button>
+      <button mat-menu-item>Report bugs</button>
+    </mat-menu>
+  </p>
+
+  <a class="buttons">
+      <button mat-button routerLink="/home-page">Home</button>
+      <button mat-button  [matMenuTriggerFor]="servicesMenu">Services</button>
+      <button mat-button  [matMenuTriggerFor]="contactMenu">Contact</button>
+  </a>
+</mat-toolbar>
