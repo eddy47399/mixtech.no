@@ -6,13 +6,14 @@ body{
 
 p.logo {
   text-align: center;
- }
+  padding: 20px;
+}
 
 .column {
   float: left;
   padding: 50px;
   width: 33.33%;
-  text-align: center;
+  text-align: left;
 }
 
 /* Clear floats after the columns */

@@ -12,7 +12,13 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { ServicesComponent } from './Pages/services/services.component';
 import { HeaderComponent } from './Elements/header/header.component';
-import {MatMenuModule} from "@angular/material/menu";
+import { MatMenuModule} from "@angular/material/menu";
+import { VpnPageComponent } from './Pages/vpn-page/vpn-page.component';
+import { PlexPageComponent } from './Pages/plex-page/plex-page.component';
+import { CloudPageComponent } from './Pages/cloud-page/cloud-page.component';
+import { MincraftPageComponent } from './Pages/mincraft-page/mincraft-page.component';
+
+
 
 @NgModule({
   declarations: [
@@ -21,6 +27,10 @@ import {MatMenuModule} from "@angular/material/menu";
     ContactPageComponent,
     ServicesComponent,
     HeaderComponent,
+    VpnPageComponent,
+    PlexPageComponent,
+    CloudPageComponent,
+    MincraftPageComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,6 +42,7 @@ import {MatMenuModule} from "@angular/material/menu";
     MatButtonModule,
     MatProgressSpinnerModule,
     MatMenuModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
